@@ -1,0 +1,46 @@
+.search-suggestion {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+}
+
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.suggestions-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+  color: #333;
+}
+
+.suggestions-dropdown li:hover,
+.suggestions-dropdown li.active {
+  background-color: #f0f0f0;
+}
